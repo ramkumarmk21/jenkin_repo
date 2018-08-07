@@ -26,8 +26,9 @@ cp -f  /var/lib/jenkins/workspace/jenkin_test   /opt/deploy_folder
 
 chmod 777 /opt/deploy_folder
 
-cp: cannot create directory ‘’: Permission denied
+cp: cannot create directory â€˜â€™: Permission denied
 
 https://www.360logica.com/blog/email-notification-in-jenkins/
 
-
+rm -rf /opt/deploy_folder/jenkin_test
+cp -rf  /var/lib/jenkins/workspace/jenkin_test   /opt/deploy_folder 
